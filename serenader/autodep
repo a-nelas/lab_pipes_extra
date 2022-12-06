@@ -1,0 +1,18 @@
+alice.o: alice/alice.c include/fifo.h alice/handler.h include/proto.h \
+  include/logging.h
+handler.o: alice/handler.c include/fifo.h alice/handler.h include/proto.h \
+  include/playlist.h
+bob.o: bob/bob.c include/cli.h include/proto.h bob/connection.h \
+  include/fifo.h bob/handler.h include/logging.h
+connection.o: bob/connection.c bob/connection.h include/fifo.h \
+  include/logging.h
+handler.o: bob/handler.c include/cli.h include/proto.h bob/handler.h \
+  bob/connection.h include/logging.h
+cli.o: lib/cli.c include/cli.h include/proto.h include/logging.h \
+  include/playlist.h
+fifo.o: lib/fifo.c include/fifo.h include/logging.h
+logging.o: lib/logging.c include/logging.h
+playlist.o: lib/playlist.c include/logging.h include/playlist.h
+proto.o: lib/proto.c include/logging.h include/proto.h
+serenader.o: serenader/serenader.c include/cli.h include/proto.h \
+  include/playlist.h
