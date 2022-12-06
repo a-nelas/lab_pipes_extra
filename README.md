@@ -1,4 +1,4 @@
-# Guião7 (Extra): Comunicação entre processos usando pipes
+# Guião 7 (Extra): Comunicação entre processos usando pipes
 
 ![IST](img/IST_DEI.png) 
 
